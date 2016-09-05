@@ -1,32 +1,43 @@
-#skills .panel {
-  width: 75%; }
-
-#projects #main-gallery.main-gallery-container {
-  width: 65%; }
+@media screen and (min-width: 2050px) {
+    #projects #main-gallery.main-gallery-container {
+        height: 37vw;
+        width: 72%;
+    }
+}
 
 @media screen and (max-width: 1024px) {
-  #skills .panel {
-    width: 70%; }
-  #projects {
-    height: 950px;
-    margin-bottom: 190px; }
+    #skills .panel {
+        width: 70%;
+    }
+    #projects {
+        height: 1020px;
+        margin-bottom: 190px;
+    }
     #projects #main-gallery.main-gallery-container {
-      width: 85%; } }
+        width: 85%;
+        height: 440px;
+    }
+    #projects #main-gallery img {
+        height: 440px;
+    }
+}
 
 @media screen and (max-width: 810px) {
-  header {
-    color: #111;
-    background-color: #fff; }
+    header {
+        color: #111;
+        background-color: #fff;
+    }
     header #mobile-nav {
-      content: '';
-      height: 5px;
-      width: 61px;
-      position: relative;
-      display: block;
-      top: 12%;
-      left: 88%;
-      background: #111; }
-      header #mobile-nav:after {
+        content: '';
+        height: 5px;
+        width: 61px;
+        position: relative;
+        display: block;
+        top: 12%;
+        left: 88%;
+        background: #111;
+    }
+    header #mobile-nav:after {
         content: '';
         position: relative;
         display: block;
@@ -34,131 +45,181 @@
         height: 5px;
         width: 61px;
         float: right;
-        background: #111; }
-      header #mobile-nav:before {
+        background: #111;
+    }
+    header #mobile-nav:before {
         content: '';
         position: relative;
         display: block;
         top: 16px;
         height: 5px;
         width: 61px;
-        background: #111; }
+        background: #111;
+    }
     header nav {
-      width: 100%;
-      height: 1px;
-      position: absolute;
-      top: 58px;
-      float: none; }
-      header nav ul {
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: 58px;
+        float: none;
+    }
+    header nav ul {
         width: 100%;
         display: none;
         background-color: #fff;
         color: #111;
         font-size: 0.9rem;
         text-align: center;
-        box-shadow: 0 3px 20px 0 #111; }
-      header nav li {
-        display: block; }
-        header nav li:last-child a {
-          border-bottom: none; }
-          header nav li:last-child a:hover {
-            color: #111;
-            background-color: #fff; }
-      header nav a {
+        box-shadow: 0 3px 20px 0 #111;
+    }
+    header nav li {
+        display: block;
+    }
+    header nav li:last-child a {
+        border-bottom: none;
+    }
+    header nav li:last-child a:hover {
         color: #111;
-        border-bottom: 1px solid gray; }
-        header nav a:hover {
-          color: #111;
-          font-size: 1rem;
-          border-bottom: 1px solid gray; }
-  #welcome div {
-    display: block; }
+        background-color: #fff;
+    }
+    header nav a {
+        color: #111;
+        border-bottom: 1px solid gray;
+    }
+    header nav a:hover {
+        color: #111;
+        font-size: 1rem;
+        border-bottom: 1px solid gray;
+    }
+    #welcome div {
+        display: block;
+    }
     #welcome div p:first-of-type {
-      font-size: 4rem; }
-  #skills {
-    height: 800px; }
+        font-size: 4rem;
+    }
+    #skills {
+        height: 800px;
+    }
     #skills p.about {
-      width: 90%; }
+        width: 90%;
+    }
     #skills .panel {
-      width: 90%; }
+        width: 90%;
+    }
     #skills .skills-container {
-      width: 100%;
-      height: auto; }
+        width: 100%;
+        height: auto;
+    }
     #skills .skills-percent {
-      display: block;
-      margin: 0 auto; }
-  #projects {
-    height: 950px;
-    margin-bottom: 0; }
+        display: block;
+        margin: 0 auto;
+    }
+    #projects {
+        height: 950px;
+        margin-bottom: 0;
+    }
     #projects .cover-div {
-      display: none; }
+        display: none;
+    }
+    #projects #gallery {
+        display: block;
+    }
     #projects #main-gallery.main-gallery-container {
-      width: 100%; }
+        width: 100%;
+    }
     #projects #main-gallery .btn-zoom-gallery {
-      display: none; }
+        display: none;
+    }
     #projects #small-gallery-container {
-      width: 100%;
-      padding: 0 5px;
-      border: none;
-      border-bottom: 1px solid #fff;
-      border-top: 1px solid #fff; }
-  footer {
-    position: relative;
-    font-size: 2rem; } }
+        width: 100%;
+        padding: 0 5px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+    }
+    footer {
+        position: relative;
+        font-size: 2rem;
+    }
+}
 
 @media screen and (max-width: 640px) {
-  #welcome {
-    height: 400px; }
+    #welcome {
+        height: 400px;
+    }
     #welcome div {
-      display: block;
-      transform: translateY(-50%);
-      margin: 0; }
-      #welcome div p:first-of-type {
-        font-size: 3.5rem; }
+        display: block;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+    #welcome div p:first-of-type {
+        font-size: 3.5rem;
+    }
     #welcome a {
-      width: 240px; }
-  #skills > p {
-    font-size: 1.2rem; }
-  #projects #main-gallery.main-gallery-container {
-    height: 360px; }
-  #projects #main-gallery img {
-    height: 360px; }
-  #projects .description {
-    width: 78%;
-    height: 64px;
-    bottom: 94px; }
-  footer#contact {
-    font-size: 2rem; } }
+        width: 240px;
+    }
+    #skills> p {
+        font-size: 1.2rem;
+    }
+    #projects #main-gallery.main-gallery-container {
+        height: 360px;
+    }
+    #projects #main-gallery img {
+        height: 360px;
+    }
+    #projects .description {
+        width: 78%;
+        height: 64px;
+        bottom: 94px;
+    }
+    footer {
+        font-size: 2rem;
+    }
+}
 
 @media screen and (max-width: 500px) {
-  header #mobile-nav {
-    top: 20%;
-    left: 78%; }
-  #welcome div p:first-of-type {
-    font-size: 2.5rem; }
-  #welcome div p:last-of-type {
-    font-size: 1.2rem; }
-  #welcome a {
-    width: 210px;
-    height: 40px;
-    line-height: 2; }
-  #skills {
-    height: 800px; }
+    header #mobile-nav {
+        top: 20%;
+        left: 78%;
+    }
+    #welcome div p:first-of-type {
+        font-size: 2.5rem;
+    }
+    #welcome div p:last-of-type {
+        font-size: 1.2rem;
+    }
+    #welcome a {
+        width: 210px;
+        height: 40px;
+        line-height: 2;
+    }
+    #skills {
+        height: 800px;
+    }
     #skills p.about {
-      font-size: 1rem; }
-  #projects {
-    height: 705px; }
+        font-size: 1rem;
+    }
+    #projects {
+        height: 705px;
+    }
     #projects #main-gallery.main-gallery-container {
-      height: 255px; }
+        height: 255px;
+    }
     #projects #main-gallery img {
-      height: 255px; }
+        height: 255px;
+    }
     #projects #main-gallery:hover .image-btn {
-      padding: 0; }
+        padding: 0;
+    }
     #projects #small-gallery-container {
-      height: 220px; }
-      #projects #small-gallery-container li {
+        height: 220px;
+    }
+    #projects #small-gallery-container li {
         width: 240px;
-        height: 150px; }
-  footer {
-    font-size: 1.2rem;
-    height: 15vh; } }
+        height: 150px;
+    }
+    footer {
+        font-size: 1.2rem;
+        height: 15vh;
+    }
+}

@@ -11,10 +11,6 @@
     //Function for reloading browser on resize
     function toggleMobileMenu() {
         var $windowWidth = $window.width();
-    /*    if ($windowWidth <= 1000) {
-            window.location.href = '#welcome';
-            location.reload;
-        }*/
         if ($windowWidth > 810) {
             $navigationItems.css('display', 'block');
         } else {

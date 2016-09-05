@@ -20,7 +20,6 @@
         $closeButton = $mainGallery.children('.btn-close-gallery'),
         $bulletNav = $mainGallery.siblings('.dot-navigation'),
         $bulletElements = $bulletNav.find('li'),
-        scroll,
         current = 1;
 
     //add description to every picture and  update it on picture change
@@ -123,10 +122,8 @@
         $smallGallery.css({
             'display': 'none'
         });
-        $imgResizeOnZoom.css({
-            'width': '100%',
-            'height': '60vh'
-        });
+        $imgResizeOnZoom.addClass('zoomed');
+
         $toggleElementsOnZoom.css({
             'display': 'none'
         });
@@ -143,10 +140,7 @@
         $smallGallery.css({
             'display': 'inline-block'
         });
-        $imgResizeOnZoom.css({
-            'width': '100%',
-            'height': '440px'
-        });
+        $imgResizeOnZoom.removeClass('zoomed');
         $toggleElementsOnZoom.css({
             'display': 'block'
         });
@@ -163,10 +157,15 @@
         if (scroll > 1550 && scroll < 1850) {
             $('#right-cover').animate({
                 'top': '1200px'
+
             }, 3500);
             $('#left-cover').animate({
                 'top': '-1200px'
             }, 3500);
+            setTimeout(function () {
+              $('.cover-div').addClass('hidden');
+            },1500);
+            $('#gallery').css('display','block');
 
         }
     }
