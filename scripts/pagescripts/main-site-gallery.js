@@ -164,8 +164,9 @@
             }, 3500);
             setTimeout(function () {
               $('.cover-div').addClass('hidden');
+              $('#gallery').css('display','block');
             },1500);
-            $('#gallery').css('display','block');
+
 
         }
     }
