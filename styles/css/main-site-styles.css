@@ -141,7 +141,7 @@ section {
     line-height: 2.5;
     color: #fff;
     cursor: pointer;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 400ms;
 }
 
 #welcome a:focus {
