@@ -115,7 +115,7 @@
         margin: 0 auto;
     }
     #projects {
-        height: 950px;
+        height: auto;
         margin-bottom: 0;
     }
     #projects .cover-div {
@@ -131,11 +131,7 @@
         display: none;
     }
     #projects #small-gallery-container {
-        width: 100%;
-        padding: 0 5px;
-        border: none;
-        border-bottom: 1px solid #fff;
-        border-top: 1px solid #fff;
+        display: none;
     }
     footer {
         position: relative;
@@ -199,9 +195,6 @@
     #skills p.about {
         font-size: 1rem;
     }
-    #projects {
-        height: 705px;
-    }
     #projects #main-gallery.main-gallery-container {
         height: 255px;
     }
@@ -210,13 +203,6 @@
     }
     #projects #main-gallery:hover .image-btn {
         padding: 0;
-    }
-    #projects #small-gallery-container {
-        height: 220px;
-    }
-    #projects #small-gallery-container li {
-        width: 240px;
-        height: 150px;
     }
     footer {
         font-size: 1.2rem;
