@@ -154,7 +154,7 @@
     #welcome a {
         width: 240px;
     }
-    #skills> p {
+    #skills>p {
         font-size: 1.2rem;
     }
     #projects #main-gallery.main-gallery-container {
@@ -207,5 +207,14 @@
     footer {
         font-size: 1.2rem;
         height: 15vh;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #projects #main-gallery.main-gallery-container {
+        height: 200px;
+    }
+    #projects #main-gallery img {
+        height: 200px;
     }
 }
