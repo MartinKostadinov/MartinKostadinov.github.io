@@ -1,4 +1,7 @@
 @media screen and (min-width: 2050px) {
+    #welcome .scroll-down {
+        top: 170%;
+    }
     #projects #main-gallery.main-gallery-container {
         height: 37vw;
         width: 72%;
@@ -6,6 +9,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+    header nav {
+        margin-left: 6%;
+    }
     #skills .panel {
         width: 70%;
     }
@@ -23,78 +29,17 @@
 }
 
 @media screen and (max-width: 810px) {
-    header {
-        color: #111;
-        background-color: #fff;
-    }
-    header #mobile-nav {
-        content: '';
-        height: 5px;
-        width: 61px;
-        position: relative;
-        display: block;
-        top: 12%;
-        left: 88%;
-        background: #111;
-    }
-    header #mobile-nav:after {
-        content: '';
-        position: relative;
-        display: block;
-        bottom: 28px;
-        height: 5px;
-        width: 61px;
-        float: right;
-        background: #111;
-    }
-    header #mobile-nav:before {
-        content: '';
-        position: relative;
-        display: block;
-        top: 16px;
-        height: 5px;
-        width: 61px;
-        background: #111;
+    header #desktop-nav-container {
+        margin-top: 10px;
+        margin-left: 10px;
     }
     header nav {
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        top: 58px;
-        float: none;
+        width: 300px;
     }
-    header nav ul {
-        width: 100%;
-        display: none;
-        background-color: #fff;
-        color: #111;
-        font-size: 0.9rem;
-        text-align: center;
-        box-shadow: 0 3px 20px 0 #111;
-    }
-    header nav li {
+    #welcome .introduction {
         display: block;
     }
-    header nav li:last-child a {
-        border-bottom: none;
-    }
-    header nav li:last-child a:hover {
-        color: #111;
-        background-color: #fff;
-    }
-    header nav a {
-        color: #111;
-        border-bottom: 1px solid gray;
-    }
-    header nav a:hover {
-        color: #111;
-        font-size: 1rem;
-        border-bottom: 1px solid gray;
-    }
-    #welcome div {
-        display: block;
-    }
-    #welcome div p:first-of-type {
+    #welcome .introduction p:first-of-type {
         font-size: 4rem;
     }
     #skills {
@@ -141,18 +86,21 @@
 
 @media screen and (max-width: 640px) {
     #welcome {
-        height: 400px;
+        height: 480px;
     }
-    #welcome div {
+    #welcome .introduction {
         display: block;
         transform: translateY(-50%);
         margin: 0;
     }
-    #welcome div p:first-of-type {
+    #welcome .introduction p:first-of-type {
         font-size: 3.5rem;
     }
     #welcome a {
         width: 240px;
+    }
+    #welcome .scroll-down {
+        display: none;
     }
     #skills>p {
         font-size: 1.2rem;
@@ -178,10 +126,10 @@
         top: 20%;
         left: 78%;
     }
-    #welcome div p:first-of-type {
+    #welcome .introduction p:first-of-type {
         font-size: 2.5rem;
     }
-    #welcome div p:last-of-type {
+    #welcome .introduction p:last-of-type {
         font-size: 1.2rem;
     }
     #welcome a {

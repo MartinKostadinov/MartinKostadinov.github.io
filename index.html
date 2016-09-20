@@ -2,179 +2,187 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="A personal portfolio webpage from the Front End developer Martin Kostadinov">
-  <meta name="author" content="Martin Kostadinov">
-  <meta property="og:title" content="Martin Kostadinov personal webpage" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://martinkostadinov.github.io/" />
-  <meta property="og:image" content="https://martinkostadinov.github.io/images/website.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1861" />
-  <meta property="og:image:height" content="950" />
-  <meta property="og:description" content="A personal portfolio webpage from the Front End developer Martin Kostadinov" />
-  <link rel="stylesheet" media="screen" href="styles/css/main-site-styles.css" >
-  <link rel="stylesheet"  media="screen and (max-width: 2560px)" href="styles/css/main-site-media-queries.css" >
-  <title>Martin Kostadinov</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A personal portfolio webpage from the Front End developer Martin Kostadinov">
+    <meta name="author" content="Martin Kostadinov">
+    <meta property="og:title" content="Martin Kostadinov personal webpage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://martinkostadinov.github.io/" />
+    <meta property="og:image" content="https://martinkostadinov.github.io/images/website.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1861" />
+    <meta property="og:image:height" content="950" />
+    <meta property="og:description" content="A personal portfolio webpage from the Front End developer Martin Kostadinov" />
+    <link rel="stylesheet" media="screen" href="styles/css/main-site-styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 2560px)" href="styles/css/main-site-media-queries.css">
+    <title>Martin Kostadinov</title>
 </head>
 
 <body>
-  <!--HEADER -->
-  <header class="clearFix" id="header">
-      <h1><a href="#welcome">Martin</a></h1>
-      <div id="mobile-nav">
-      </div>
-      <nav>
-          <ul>
-              <li><a href="#welcome">Hello</a>
-              </li>
-              <li><a href="#skills">Skills</a>
-              </li>
-              <li><a href="#projects">Projects</a>
-              </li>
-              <li><a href="#push">Contact me</a></li>
-          </ul>
-      </nav>
-  </header>
-  <main>
-      <!--First section -Introduction -->
-      <section id="welcome">
-          <div class="introduction">
-              <p>
-                  Hi my name is Martin
-              </p>
-              <p>
-                  and i like to create and design websites...
-              </p>
-              <a href="#push">Contact</a>
-          </div>
-      </section>
-      <!--Second section skills and who am i -->
-      <section id="skills">
-          <div class="panel">
-              <h2>Who am i ?</h2>
-              <p class="about">
-                  ... i'am 24 years old and i just finished my university degree in telecommunications. Last year i started learning how to create websites. At the beginnig it was just a hobby, but more and more time i was spending in website development and design, more
-                  i liked it. So i decided, that this is what i want to do, to create things that people will enjoy it. Feel free to look my <a href="https://github.com/MartinKostadinov/projectForWebsite"><strong>GitHub</strong>, for the projects on which i am working on</a>.
-              </p>
-              <h4>Current skills !</h4>
-              <div class="skills-container">
-                  <div class="skills-percent">
-                      <p>Coding</p>
-                      <div class="coding"></div>
-                  </div>
-                  <div class="skills-percent">
-                      <p>Communication</p>
-                      <div class="communication"></div>
-                  </div>
-                  <div class="skills-percent">
-                      <p>Motivation</p>
-                      <div class="motivation"></div>
-                  </div>
-                  <div class="skills-percent">
-                      <p>Learning</p>
-                      <div class="learning"></div>
-                  </div>
-                  <div class="skills-percent">
-                      <p>Organization</p>
-                      <div class="organization"></div>
-                  </div>
-                  <div class="skills-percent">
-                      <p>Computing</p>
-                      <div class="computing"></div>
-                  </div>
-              </div>
-          </div>
+    <!--HEADER -->
+    <header class="clearFix" id="header">
+        <div id="desktop-nav-container">
+            <div class="mobile-nav-desktop-icon"></div>
+        </div>
+        <h1><a href="#welcome">MARTIN</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Hello</a>
+                </li>
+                <li><a href="#skills">Skills</a>
+                </li>
+                <li><a href="#projects">Projects</a>
+                </li>
+                <li><a href="#push">Contact</a></li>
+                <!--#push is  empty div -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--First section -Introduction -->
+        <section id="welcome" class=" hideWelcome">
+            <p class="hi">HI</p>
+                <div class="introduction hide-intro">
 
-      </section>
-      <!--3rd Section  projects  gallery -->
-      <section id="projects">
-          <h2>Projects</h2>
+                    <p>
+                       My name is Martin
+                    </p>
+                    <p>
+                        and i like to create websites...
+                    </p>
+                    <a href="#push">Contact</a>
+                    <div class="scroll-down">
+                        <span>Scroll down</span>
+                        <span>&#8643;</span>
+                    </div>
+                </div>
+        </section>
+        <!--Second section skills and who am i -->
+        <section id="skills">
+            <div class="panel">
+                <h2>Who am i ?</h2>
+                <p class="about">
+                    ... i'am 24 years old and i just finished my university degree in telecommunications. Last year i started learning how to create websites. At the beginnig it was just a hobby, but more and more time i was spending in website development and design, more
+                    i liked it. So i decided, that this is what i want to do, to create things that people will enjoy it. Feel free to look my <a href="https://github.com/MartinKostadinov/projectForWebsite"><strong>GitHub</strong>, for the projects on which i am working on</a>.
+                </p>
+                <h4>Current skills !</h4>
+                <div class="skills-container">
+                    <div class="skills-percent">
+                        <p>Coding</p>
+                        <div class="coding"></div>
+                    </div>
+                    <div class="skills-percent">
+                        <p>Communication</p>
+                        <div class="communication"></div>
+                    </div>
+                    <div class="skills-percent">
+                        <p>Motivation</p>
+                        <div class="motivation"></div>
+                    </div>
+                    <div class="skills-percent">
+                        <p>Learning</p>
+                        <div class="learning"></div>
+                    </div>
+                    <div class="skills-percent">
+                        <p>Organization</p>
+                        <div class="organization"></div>
+                    </div>
+                    <div class="skills-percent">
+                        <p>Computing</p>
+                        <div class="computing"></div>
+                    </div>
+                </div>
+            </div>
 
-          <div class="cover-div" id="left-cover">
-              <p>M</p>
-          </div>
-          <div class="cover-div" id="right-cover">
-              <p>M</p>
-          </div>
-          <div id="gallery">
-              <div id="main-gallery" class="main-gallery-container">
-                  <ul class="clearFix">
-                      <li class="slide" id="img_1" data-img='1'>
-                          <a href="#"><img src="images/website.jpg" alt="Personal web page link" /></a>
-                      </li>
-                      <li class="slide" id="img_2" data-img='2'>
-                          <a href="blog.html"><img src="images/blog1.jpg" alt="Blog Page picture and link" /></a>
-                      </li>
-                      <li class="slide" id="img_3" data-img='3'>
-                          <a href="todo2.html"><img src="images/todo.jpg" alt="To-do project" /></a>
-                      </li>
-                      <li class="slide" id="img_4" data-img='4'>
-                          <a href="cv.html"><img src="images/cv.jpg" alt="Project for CV app" /></a>
-                      </li>
-                      <li class="slide" id="img_5" data-img='5'><img src="images/coming.jpg" alt="5" /></li>
-                  </ul>
-                  <div id="right-side-button" class="image-btn"> > </div>
-                  <div id="left-side-button" class="image-btn"> < </div>
-                          <div class="btn-zoom-gallery">Zoom In</div>
-                          <div class='btn-close-gallery'>X</div>
-                  </div>
-                  <div class="dot-navigation">
-                      <ul>
-                          <li class="bullet1 active"></li>
-                          <li class="bullet2"></li>
-                          <li class="bullet3"></li>
-                          <li class="bullet4"></li>
-                          <li class="bullet5"></li>
-                      </ul>
-                  </div>
-                  <div class="description">
-                      <p class="desc1">
-                          This is my website project, click on the image if you want to see uncompressed code.
-                      </p>
-                      <p class="desc2">
-                          <a href="blog.html">Project for  personal blog, for now it's just static. Currenly  adding functionality with React.</a>
-                      </p>
-                      <p class="desc3">
-                          <a href="todo.html">Project for  to-do list, it's static, but working.</a>
-                      </p>
-                      <p class="desc4">
-                          <a href="cv.html">CV template. This is  CV template, with nice effects, which it can be used for job posts.</a>
-                      </p>
-                      <p class="desc5">
-                          descirption for the pic5
-                      </p>
-                  </div>
-                  <div id="small-gallery-container">
-                      <div id="small-gallery-right-btn" class="small-gallery-container-btns"> > </div>
-                      <div id="small-gallery-left-btn" class="small-gallery-container-btns"> < </div>
-                              <div class="gallery-nav clearFix">
+        </section>
+        <!--3rd Section  projects  gallery -->
+        <section id="projects">
+            <h2>Projects</h2>
 
-                                  <ul>
-                                      <li id="smallImg_1"><img class="active1" src="images/website.jpg" alt="My website" />
-                                          <li id="smallImg_2"><img src="images/blog1.jpg" alt="link to my blog project" /></li>
-                                          <li id="smallImg_3"><img src="images/todo.jpg" alt="To do project" /></li>
-                                          <li id="smallImg_4"><img src="images/cv.jpg" alt="CV app project" /></li>
-                                          <li id="smallImg_5"><img src="images/coming.jpg" alt="coming soon" /></li>
-                                  </ul>
+            <div class="cover-div" id="left-cover">
+                <p>M</p>
+            </div>
+            <div class="cover-div" id="right-cover">
+                <p>M</p>
+            </div>
+            <div id="gallery">
+                <div id="main-gallery" class="main-gallery-container">
+                    <ul class="clearFix">
+                        <li class="slide" id="img_1" data-img='1'>
+                            <a href="#"><img src="images/website.jpg" alt="Personal web page link" /></a>
+                        </li>
+                        <li class="slide" id="img_2" data-img='2'>
+                            <a href="blog.html"><img src="images/blog1.jpg" alt="Blog Page picture and link" /></a>
+                        </li>
+                        <li class="slide" id="img_3" data-img='3'>
+                            <a href="todo2.html"><img src="images/todo.jpg" alt="To-do project" /></a>
+                        </li>
+                        <li class="slide" id="img_4" data-img='4'>
+                            <a href="cv.html"><img src="images/cv.jpg" alt="Project for CV app" /></a>
+                        </li>
+                        <li class="slide" id="img_5" data-img='5'><img src="images/coming.jpg" alt="5" /></li>
+                    </ul>
+                    <div id="right-side-button" class="image-btn"> &#10095;  </div>
+                    <div id="left-side-button" class="image-btn">   &#10094; </div>
+                            <div class="btn-zoom-gallery">Zoom In</div>
+                            <div class='btn-close-gallery'>X</div>
+                    </div>
+                    <div class="dot-navigation">
+                        <ul>
+                            <li class="bullet1 active"></li>
+                            <li class="bullet2"></li>
+                            <li class="bullet3"></li>
+                            <li class="bullet4"></li>
+                            <li class="bullet5"></li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <p class="desc1">
+                            This is my website project, click on the image if you want to see uncompressed code.
+                        </p>
+                        <p class="desc2">
+                            <a href="blog.html">Project for  personal blog, for now it's just static. Currenly  adding functionality with React.</a>
+                        </p>
+                        <p class="desc3">
+                            <a href="todo.html">Project for  to-do list, it's static, but working.</a>
+                        </p>
+                        <p class="desc4">
+                            <a href="cv.html">CV template. This is  CV template, with nice effects, which it can be used for job posts.</a>
+                        </p>
+                        <p class="desc5">
+                            descirption for the pic5
+                        </p>
+                    </div>
+                    <div id="small-gallery-container">
+                        <div id="small-gallery-right-btn" class="small-gallery-container-btns">  &#10095; </div>
+                        <div id="small-gallery-left-btn" class="small-gallery-container-btns"> &#10094; </div>
+                                <div class="gallery-nav clearFix">
 
-                              </div>
-                      </div>
-                  </div>
-      </section>
-  </main>
-  <div id="push">
+                                    <ul>
+                                        <li id="smallImg_1"><img class="active1" src="images/website.jpg" alt="My website" />
+                                            <li id="smallImg_2"><img src="images/blog1.jpg" alt="link to my blog project" /></li>
+                                            <li id="smallImg_3"><img src="images/todo.jpg" alt="To do project" /></li>
+                                            <li id="smallImg_4"><img src="images/cv.jpg" alt="CV app project" /></li>
+                                            <li id="smallImg_5"><img src="images/coming.jpg" alt="coming soon" /></li>
+                                    </ul>
 
-  </div>
-  <!--FOOTER -->
+                                </div>
+                        </div>
+                    </div>
+        </section>
+    </main>
+    <div id="push">
+
+    </div>
+    <!--FOOTER -->
     <footer>
         <a href="mailto:martinkostadinov681@gmail.com">martinkostadinov681@gmail.com</a>
     </footer>
     <!--Warning  these libraries  have their own licenses, read them before using, links to licenses in https://github.com/MartinKostadinov/projectForWebsite Reade ME  Licenses -->
-    <script  type="text/javascript" src="scripts/libraries/jquery-2.1.4.js"></script>
-    <script  type="text/javascript" src="scripts/libraries/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="scripts/libraries/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="scripts/libraries/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="scripts/pagescripts/main-site-gallery.js"></script>
     <script type="text/javascript" src="scripts/pagescripts/main-site-effects.js"></script>
 </body>

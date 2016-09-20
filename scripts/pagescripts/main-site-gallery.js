@@ -6,7 +6,7 @@
         $galleryNav = $('.gallery-nav'),
         $smallGallery = $('#small-gallery-container'),
         liLength = $mainGallery.find('.slide').length,
-        imgWidth = $galleryNav.find('img').width(),
+        $smallGalleryImgWidth = $galleryNav.find('li').width(),
         $imageSlider = $mainGallery.find('ul'),
         $swipeTouch = $imageSlider.find('li'),
         $selectSmallImages = $galleryNav.find('img'),
@@ -71,24 +71,25 @@
     function checkImageCurrentRight() {
         if (current >= liLength) {
             current = 1;
-            $imageSlider2.css('margin-left', imgWidth);
+            $imageSlider2.css('margin-left', $smallGalleryImgWidth);
         } else {
             current++;
         }
         $imageSlider2.css({
-            'margin-left': '-=' + imgWidth + 'px '
+            'margin-left': '-=' + $smallGalleryImgWidth + 'px '
         });
     }
     // Checks  if it is  possible to move to prev picture and update small gallery and img position
     function checkImageCurrentLeft() {
-        var totalImgLength = (liLength * imgWidth) - imgWidth;
+        var totalImgLength = (liLength * $smallGalleryImgWidth) - $smallGalleryImgWidth;
+        console.log($smallGalleryImgWidth);
         if (current <= 1) {
             current = liLength;
             $imageSlider2.css('margin-left', '-' + totalImgLength + 'px');
         } else {
             current--;
             $imageSlider2.css({
-                'margin-left': '+=' + imgWidth + 'px '
+                'margin-left': '+=' + $smallGalleryImgWidth + 'px '
             });
         }
     }
@@ -162,12 +163,10 @@
             $('#left-cover').animate({
                 'top': '-1200px'
             }, 3500);
-            setTimeout(function () {
-              $('.cover-div').addClass('hidden');
-              $('#gallery').css('display','block');
-            },1500);
-
-
+            setTimeout(function() {
+                $('.cover-div').addClass('hidden');
+                $('#gallery').css('display', 'block');
+            }, 1500);
         }
     }
     // all events and binding
