@@ -15,176 +15,229 @@
     <meta property="og:image:width" content="1861" />
     <meta property="og:image:height" content="950" />
     <meta property="og:description" content="A personal portfolio webpage from the Front End developer Martin Kostadinov" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!--Montserrat font  is licensed under Open Font License  you can see the full license at http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web-->
     <link rel="stylesheet" media="screen" href="styles/css/main-site-styles.css">
     <link rel="stylesheet" media="screen and (max-width: 2560px)" href="styles/css/main-site-media-queries.css">
     <title>Martin Kostadinov</title>
 </head>
 
 <body>
-    <!--HEADER -->
-    <header class="clearFix" id="header">
-        <div id="desktop-nav-container">
-            <div class="mobile-nav-desktop-icon"></div>
-        </div>
-        <h1><a href="#welcome">MARTIN</a></h1>
-        <nav>
-            <ul>
-                <li><a href="#welcome">Hello</a>
-                </li>
-                <li><a href="#skills">Skills</a>
-                </li>
-                <li><a href="#projects">Projects</a>
-                </li>
-                <li><a href="#push">Contact</a></li>
-                <!--#push is  empty div -->
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!--First section -Introduction -->
-        <section id="welcome" class=" hideWelcome">
-            <p class="hi">HI</p>
-                <div class="introduction hide-intro">
+  <!--HEADER -->
+  <header class="clearFix" id="header">
+      <div id="desktop-nav-container" title="Open Menu">
+          <div class="mobile-nav-desktop-icon"></div>
+      </div>
 
-                    <p>
-                       My name is Martin
-                    </p>
-                    <p>
-                        and i like to create websites...
-                    </p>
-                    <a href="#push">Contact</a>
-                    <div class="scroll-down">
-                        <span>Scroll down</span>
-                        <span>&#8643;</span>
+      <h1><a href="#welcome">MARTIN</a></h1>
+
+      <nav>
+          <ul>
+              <li><a href="#welcome">Hello</a>
+              </li>
+              <li><a href="#skills">Skills</a>
+              </li>
+              <li><a href="#projects">Projects</a>
+              </li>
+              <li><a href="#push">Contact</a></li>
+              <!--#push is  empty div -->
+          </ul>
+      </nav>
+
+  </header>
+  <main>
+      <!--First section -Introduction -->
+      <section id="welcome" class=" hideWelcome">
+          <p class="hi">HI</p>
+          <div class="introduction hide-intro">
+
+              <p>
+                  My name is Martin
+              </p>
+              <p>
+                  and i like to create websites...
+              </p>
+              <a href="#push">Contact</a>
+              <div class="scroll-down">
+                  <span>Scroll down</span>
+                  <span>&#8643;</span>
+              </div>
+          </div>
+      </section>
+      <!--Second section skills and who am i -->
+      <section id="skills">
+              <h2>About me</h2>
+              <div class="panel panels-left">
+                  <div class="chat-box guest-q">
+                      <div class="person-circle">You</div> <span class="date">Date</span>
+                      <p class="text-box question">Who are you ?</p>
+                  </div>
+                  <div class=" chat-box me-answer clearFix">
+                      <div class="person-circle">Me</div>
+                      <p class="text-box answer">My name is Martin, 24 years old Junior Front-end developer.I have Bachelor's degree in telecommunications.</p>
+                  </div>
+              </div>
+              <div class="panel panels-right">
+                <div class="chat-box guest-q">
+                    <div class="person-circle">You</div> <span class="date">Date</span>
+                    <p class="text-box question">Why Front-end ?</p>
+                </div>
+                <div class=" chat-box me-answer clearFix">
+                    <div class="person-circle">Me</div>
+                    <p class="text-box answer"> A year ago, i made the decision that i don't want to continue my life with telecommunications and started looking into the web technologies, because that was my favorite object in high-school. When i looked deep into the web development i was fascinated with the idea to create website from an  image and  and i decided that this is what i want to do. So here i am now after a year of studying, looking for my first job, and creating my own projects. You can find them at
+                      <a href="https://github.com/MartinKostadinov/projectForWebsite">
+                          <strong>GitHub</strong></a>.</p>
+                </div>
+              </div>
+              <div class="panel panels-left">
+                <div class="chat-box guest-q">
+                    <div class="person-circle">You</div>  <span class="date">Date</span>
+                    <p class="text-box question">What it is your current skill level ?</p>
+                </div>
+                <div class=" chat-box me-answer clearFix">
+                    <div class="person-circle">Me</div>
+                    <div class="text-box answer skills-container">
+
+                      <div class="circle-container">
+                          <span class="html-css">HTML/CSS</span>
+                        <div class="circle-border html">
+                        <div class="circle">
+                          <span class="circle-value">80%</span>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="circle-container">
+                        <span class="html-css">jQuery</span>
+                        <div class="circle-border js">
+                        <div class="circle">
+                          <span class="circle-value">60%</span>
+                        </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
-        </section>
-        <!--Second section skills and who am i -->
-        <section id="skills">
-            <div class="panel">
-                <h2>Who am i ?</h2>
-                <p class="about">
-                    ... i'am 24 years old and i just finished my university degree in telecommunications. Last year i started learning how to create websites. At the beginnig it was just a hobby, but more and more time i was spending in website development and design, more
-                    i liked it. So i decided, that this is what i want to do, to create things that people will enjoy it. Feel free to look my <a href="https://github.com/MartinKostadinov/projectForWebsite"><strong>GitHub</strong>, for the projects on which i am working on</a>.
-                </p>
-                <h4>Current skills !</h4>
-                <div class="skills-container">
-                    <div class="skills-percent">
-                        <p>Coding</p>
-                        <div class="coding"></div>
-                    </div>
-                    <div class="skills-percent">
-                        <p>Communication</p>
-                        <div class="communication"></div>
-                    </div>
-                    <div class="skills-percent">
-                        <p>Motivation</p>
-                        <div class="motivation"></div>
-                    </div>
-                    <div class="skills-percent">
-                        <p>Learning</p>
-                        <div class="learning"></div>
-                    </div>
-                    <div class="skills-percent">
-                        <p>Organization</p>
-                        <div class="organization"></div>
-                    </div>
-                    <div class="skills-percent">
-                        <p>Computing</p>
-                        <div class="computing"></div>
-                    </div>
+              </div>
+              <div class="panel panels-right">
+                <div class="chat-box guest-q">
+                    <div class="person-circle">You</div> <span class="date">Date</span>
+                    <p class="text-box question">Any personal  skills you want to share?</p>
                 </div>
-            </div>
-
-        </section>
-        <!--3rd Section  projects  gallery -->
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <div class="cover-div" id="left-cover">
-                <p>M</p>
-            </div>
-            <div class="cover-div" id="right-cover">
-                <p>M</p>
-            </div>
-            <div id="gallery">
-                <div id="main-gallery" class="main-gallery-container">
-                    <ul class="clearFix">
-                        <li class="slide" id="img_1" data-img='1'>
-                            <a href="#"><img src="images/website.jpg" alt="Personal web page link" /></a>
-                        </li>
-                        <li class="slide" id="img_2" data-img='2'>
-                            <a href="blog.html"><img src="images/blog1.jpg" alt="Blog Page picture and link" /></a>
-                        </li>
-                        <li class="slide" id="img_3" data-img='3'>
-                            <a href="todo2.html"><img src="images/todo.jpg" alt="To-do project" /></a>
-                        </li>
-                        <li class="slide" id="img_4" data-img='4'>
-                            <a href="cv.html"><img src="images/cv.jpg" alt="Project for CV app" /></a>
-                        </li>
-                        <li class="slide" id="img_5" data-img='5'><img src="images/coming.jpg" alt="5" /></li>
-                    </ul>
-                    <div id="right-side-button" class="image-btn"> &#10095;  </div>
-                    <div id="left-side-button" class="image-btn">   &#10094; </div>
-                            <div class="btn-zoom-gallery">Zoom In</div>
-                            <div class='btn-close-gallery'>X</div>
-                    </div>
-                    <div class="dot-navigation">
-                        <ul>
-                            <li class="bullet1 active"></li>
-                            <li class="bullet2"></li>
-                            <li class="bullet3"></li>
-                            <li class="bullet4"></li>
-                            <li class="bullet5"></li>
-                        </ul>
-                    </div>
-                    <div class="description">
-                        <p class="desc1">
-                            This is my website project, click on the image if you want to see uncompressed code.
-                        </p>
-                        <p class="desc2">
-                            <a href="blog.html">Project for  personal blog, for now it's just static. Currenly  adding functionality with React.</a>
-                        </p>
-                        <p class="desc3">
-                            <a href="todo.html">Project for  to-do list, it's static, but working.</a>
-                        </p>
-                        <p class="desc4">
-                            <a href="cv.html">CV template. This is  CV template, with nice effects, which it can be used for job posts.</a>
-                        </p>
-                        <p class="desc5">
-                            descirption for the pic5
-                        </p>
-                    </div>
-                    <div id="small-gallery-container">
-                        <div id="small-gallery-right-btn" class="small-gallery-container-btns">  &#10095; </div>
-                        <div id="small-gallery-left-btn" class="small-gallery-container-btns"> &#10094; </div>
-                                <div class="gallery-nav clearFix">
-
-                                    <ul>
-                                        <li id="smallImg_1"><img class="active1" src="images/website.jpg" alt="My website" />
-                                            <li id="smallImg_2"><img src="images/blog1.jpg" alt="link to my blog project" /></li>
-                                            <li id="smallImg_3"><img src="images/todo.jpg" alt="To do project" /></li>
-                                            <li id="smallImg_4"><img src="images/cv.jpg" alt="CV app project" /></li>
-                                            <li id="smallImg_5"><img src="images/coming.jpg" alt="coming soon" /></li>
-                                    </ul>
-
-                                </div>
+                <div class=" chat-box me-answer clearFix">
+                    <div class="person-circle">Me</div>
+                    <div class="text-box answer skills-container">
+                        <div class="skills-percent">
+                            <p>Teamplayer</p>
+                            <div class="coding"></div>
+                        </div>
+                        <div class="skills-percent">
+                            <p>Communication</p>
+                            <div class="communication"></div>
+                        </div>
+                        <div class="skills-percent">
+                            <p>Creativity</p>
+                            <div class="motivation"></div>
+                        </div>
+                        <div class="skills-percent">
+                            <p>Perfecionism</p>
+                            <div class="learning"></div>
+                        </div>
+                        <div class="skills-percent">
+                            <p>Communication</p>
+                            <div class="organization"></div>
+                        </div>
+                        <div class="skills-percent">
+                            <p>Computing</p>
+                            <div class="computing"></div>
                         </div>
                     </div>
-        </section>
-    </main>
-    <div id="push">
+                </div>
+              </div>
 
-    </div>
-    <!--FOOTER -->
+      </section>
+      <!--3rd Section  projects  gallery -->
+      <section id="projects">
+          <h2>Projects</h2>
+          <div id="gallery">
+              <div id="main-gallery" class="main-gallery-container">
+                  <ul class="clearFix">
+                      <li class="slide" id="img_1" >
+
+                          <a href="https://github.com/MartinKostadinov/allProjects"><img src="images/website.jpg" alt="Personal web page link" /></a>
+                          <p class="desc1 description">
+                              This is my website project.
+                          </p>
+                      </li>
+                      <li class="slide" id="img_2" >
+                          <a href="https://github.com/MartinKostadinov/allProjects"><img src="images/blog1.jpg" alt="Blog Page picture and link" /></a>
+                          <p class="desc2 description">
+                              Project for personal blog, for now it's just static. Currenly adding functionality with Angular.
+                          </p>
+                      </li>
+                      <li class="slide" id="img_3">
+                          <a href="https://github.com/MartinKostadinov/allProjects"><img src="images/todo.jpg" alt="To-do project" /></a>
+                          <p class="desc3 description">
+                             To-do list app with animations.
+                          </p>
+                      </li>
+                      <li class="slide" id="img_4" >
+                          <a href="https://github.com/MartinKostadinov/allProjectsl"><img src="images/cv.jpg" alt="Project for CV app" /></a>
+                          <p class="desc4 description">
+                           This is CV template, with nice effects, which it can be used for job posts.
+                               </p>
+                      </li>
+                      <li class="slide" id="img_5"><img src="images/coming.jpg" alt="Coming soon" />
+                          <p class="desc5 description">
+                              descirption for the pic5
+                          </p>
+                      </li>
+
+                  </ul>
+                  <div id="right-side-button" class="image-btn"> &#10095; </div>
+                  <div id="left-side-button" class="image-btn">
+                      &#10094;</div>
+                  <div class="dot-navigation">
+                      <ul>
+                          <li class="bullet1 active"></li>
+                          <li class="bullet2"></li>
+                          <li class="bullet3"></li>
+                          <li class="bullet4"></li>
+                          <li class="bullet5"></li>
+                      </ul>
+                  </div>
+              </div>
+
+
+              <div id="small-gallery-container">
+                  <div id="small-gallery-right-btn" class="small-gallery-container-btns"> &#10095; </div>
+                  <div id="small-gallery-left-btn" class="small-gallery-container-btns">
+                      &#10094; </div>
+                  <div class="gallery-nav clearFix">
+
+                      <ul>
+                          <li id="smallImg_1"><img class="active1" src="images/website.jpg" alt="My website" />
+                              <li id="smallImg_2"><img src="images/blog1.jpg" alt="link to my blog project" /></li>
+                              <li id="smallImg_3"><img src="images/todo.jpg" alt="To do project" /></li>
+                              <li id="smallImg_4"><img src="images/cv.jpg" alt="CV app project" /></li>
+                              <li id="smallImg_5"><img src="images/coming.jpg" alt="coming soon" /></li>
+                      </ul>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
+  <div id="push">
+
+  </div>
+  <!--FOOTER -->
     <footer>
         <a href="mailto:martinkostadinov681@gmail.com">martinkostadinov681@gmail.com</a>
     </footer>
-    <!--Warning  these libraries  have their own licenses, read them before using, links to licenses in https://github.com/MartinKostadinov/projectForWebsite Reade ME  Licenses -->
-    <script type="text/javascript" src="scripts/libraries/jquery-2.1.4.js"></script>
-    <script type="text/javascript" src="scripts/libraries/jquery.mobile-1.4.5.min.js"></script>
-    <script type="text/javascript" src="scripts/pagescripts/main-site-gallery.js"></script>
-    <script type="text/javascript" src="scripts/pagescripts/main-site-effects.js"></script>
+    <!--Warning  these libraries  have their own licenses, read them before using, link to license in https://jquery.org/license/ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="scripts/main-site-gallery.js"></script>
+    <script type="text/javascript" src="scripts/main-site-effects.js"></script>
 </body>
 
 </html>
