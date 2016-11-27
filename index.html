@@ -2,257 +2,245 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="A personal portfolio webpage from the Front End developer Martin Kostadinov">
-	<meta name="author" content="Martin Kostadinov">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<!--Montserrat font  is licensed under Open Font License  you can see the full license at http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web-->
-	<link rel="stylesheet" href="styles/css/main.min.css">
-	<title>Martin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name "description" content="A personal portfolio webpage from the Front End developer Martin Kostadinov">
+    <meta name "author" content="Martin Kostadinov">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!--Montserrat font  is licensed under Open Font License  you can see the full license at http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web-->
+    <link rel="stylesheet" href="../dist/styles/css/main.min.css">
+    <title>Personal webpage project</title>
 </head>
 
 <body>
-	<!--HEADER -->
-	<header class="clearFix" id="header">
-		<div id="desktop-nav-container" title="Menu" role="button" tabindex="1">
-			<div class="mobile-nav-desktop-icon"></div>
-		</div>
+    <!--HEADER -->
+    <header class="clearFix" id="header">
+        <div class="header__menu-btn" title="Menu" role="button" tabindex="1">
+            <div class="header__menu-btn__icon"></div>
+        </div>
+        <h1 class="logo"><a href="#welcome" tabindex="2">MARTIN</a></h1>
+        <nav class="header__nav">
+            <ul role="menubar" aria-hidden="true">
+                <li class="header__nav__item" role="menuitem"><a class="header__nav__anchor" href="#welcome">Hello</a>
+                </li>
+                <li class="header__nav__item" role="menuitem"><a class="header__nav__anchor" href="#skills">Skills</a>
+                </li>
+                <li class="header__nav__item" role="menuitem"><a class="header__nav__anchor" href="#projects">Projects</a>
+                </li>
+                <li class="header__nav__item" role="menuitem"><a class="header__nav__anchor" href="#contact">Contact</a></li>
+                <!--#contact is  empty div  to show-->
+            </ul>
+        </nav>
+    </header>
+      <!--HEADER -->
+    <main>
+        <!--First section -Introduction -->
+        <section id="welcome">
+            <div class="introduction ">
 
-		<h1><a href="#welcome" tabindex="2">MARTIN</a></h1>
+                <p class="introduction__first-part">
+                    My name is Martin
+                </p>
+                <p class="introduction__second-part">
+                    and i like to create websites...
+                </p>
+                <a href="#contact"  class="btn-contact" tabindex="3" role="button">Contact</a>
+                <div class="scroll-down">
+                    <span class="scroll-down__text">Scroll down</span>
+                    <span class="scroll-down__icon">&#8643;</span>
+                </div>
+            </div>
+        </section>
+        <!--Second section skills and who am i -->
+        <section id="skills">
+            <h2>About me</h2>
+            <div class="panels panels--left">
+                <div class="chat-box chat-box--guest">
+                    <div class=" chat-box__avatar chat-box__avatar--guest">You</div> <time class="date">Date</time>
+                    <p class="chat-box__text chat-box__text--question">Who are you ?</p>
+                </div>
+                <div class=" chat-box chat-box--me clearFix">
+                    <div class="chat-box__avatar chat-box__avatar--me">Me</div>
+                    <p class="chat-box__text chat-box__text--answer">My name is Martin, 24 years old Junior Front-end developer.I have Bachelor's degree in telecommunications.</p>
+                </div>
+            </div>
+            <div class="panels panels--right">
+                <div class="chat-box chat-box--guest">
+                    <div class="chat-box__avatar chat-box__avatar--guest">You</div> <time class="date">Date</time>
+                    <p class="chat-box__text chat-box__text--question">Why Front-end ?</p>
+                </div>
+                <div class=" chat-box chat-box--me clearFix">
+                    <div class="chat-box__avatar chat-box__avatar--me">Me</div>
+                    <p class="chat-box__text chat-box__text--answer"> A year ago, i made the decision that i don't want to continue my life with telecommunications and started looking into the web technologies, because that was my favorite object in high-school. When i looked deep into the web development
+                        i was fascinated with the idea to create website from an image and  i decided that this is what i want to do. So here i am now after a year of studying, looking for my first job, and creating my own projects. You can find them
+                        at
+                        <a class="github-link" href="https://github.com/MartinKostadinov/projectForWebsite">
+                            <strong>GitHub</strong></a>.</p>
+                </div>
+            </div>
+            <div class="panels panels--left">
+                <div class="chat-box chat-box--guest">
+                    <div class="chat-box__avatar chat-box__avatar--guest">You</div> <time class="date">Date</time>
+                    <p class="chat-box__text chat-box__text--question">What it is your current skill level ?</p>
+                </div>
+                <div class=" chat-box chat-box--me clearFix">
+                    <div class="chat-box__avatar chat-box__avatar--me">Me</div>
+                    <div class="chat-box__text chat-box__text--answer skills">
 
-		<nav>
-			<ul role="menubar" aria-hidden="true">
-				<li role="menuitem"><a id="shit" href="#welcome">Hello</a>
-				</li>
-				<li role="menuitem"><a href="#skills">Skills</a>
-				</li>
-				<li role="menuitem"><a href="#projects">Projects</a>
-				</li>
-				<li role="menuitem"><a href="#push">Contact</a></li>
-				<!--#push is  empty div -->
-			</ul>
-		</nav>
+                        <div class="skills__coding">
+                            <span class="">HTML/CSS</span>
+                            <div class="skills__coding__border skills__coding__border--html">
+                                <div class="skills__coding__circle">
+                                    <span class="skills__coding__value">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__coding">
+                            <span class="">JavaScript(jQuery)</span>
+                            <div class="skills__coding__border skills__coding__border--js">
+                                <div class="skills__coding__circle">
+                                    <span class="skills__coding__value">60%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panels panels--right">
+                <div class="chat-box chat-box--guest">
+                    <div class="chat-box__avatar chat-box__avatar--guest">You</div> <time class="date">Date</time>
+                    <p class="chat-box__text chat-box__text--question">Any personal skills you want to share?</p>
+                </div>
+                <div class=" chat-box chat-box--me clearFix">
+                    <div class=" chat-box__avatar chat-box__avatar--me">Me</div>
+                    <div class="chat-box__text chat-box__text--answer skills">
+                        <div class="skills__personal">
+                            <p>Teamplayer</p>
+                            <div class="teamplayer"></div>
+                        </div>
+                        <div class="skills__personal">
+                            <p>Communication</p>
+                            <div class="communication"></div>
+                        </div>
+                        <div class="skills__personal">
+                            <p>Creativity</p>
+                            <div class="motivation"></div>
+                        </div>
+                        <div class="skills__personal">
+                            <p>Perfecionism</p>
+                            <div class="learning"></div>
+                        </div>
+                        <div class="skills__personal">
+                            <p>Communication</p>
+                            <div class="organization"></div>
+                        </div>
+                        <div class="skills__personal">
+                            <p>Computing</p>
+                            <div class="computing"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-	</header>
-	<main>
-		<!--First section -Introduction -->
-		<section id="welcome">
-			<div class="introduction ">
+        </section>
+        <!--3rd Section  projects  gallery -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul class="projects__container">
+                <li class="projects__item projects__description">
+                    <div class="projects__information">
+                        <h3 class="projects__title">Personal Website</h3>
+                        <p class="projects__about-text">My biggest project so far is the project for my own website. Since version one which went live - September 2015, the site was completely redesigned, current version is 3.0.
+                        </p>
+                        <p class="projects__about-text">The project main features are - it ‘s <strong>responsive</strong> to min - width 320px and max - width 2560px and maintain <strong>Open Graph Protocol</strong>, also I am currently adding <em>ARIA </em>support. Other features are
+                            various Parallax techniques and animations for Desktop devices.
+                        </p>
+                        <span class="projects__features">Technologies used: </span><span class="projects__features-techs"> <em>HTML5, CSS3, JavaScript</em> </span>
+                        <a href="https://github.com/MartinKostadinov/allProjects/tree/master/personal%20Site" class="projects__btn " role="button">Source Code</a>
+                      </div>
 
-				<p>
-					My name is Martin
-				</p>
-				<p>
-					and i like to create websites...
-				</p>
-				<a href="#push" tabindex="3" role="button">Contact</a>
-				<div class="scroll-down">
-					<span>Scroll down</span>
-					<span>&#8643;</span>
-				</div>
-			</div>
-		</section>
-		<!--Second section skills and who am i -->
-		<section id="skills">
-			<h2>About me</h2>
-			<div class="panel panels-left">
-				<div class="chat-box guest-q">
-					<div class="person-circle">You</div>
-					<time datetime="2016" class="date">Date</time>
-					<p class="text-box question">Who are you ?</p>
-				</div>
-				<div class=" chat-box me-answer clearFix">
-					<div class="person-circle">Me</div>
-					<p class="text-box answer">My name is Martin, 24 years old Junior Front-end developer.I have Bachelor's degree in telecommunications.</p>
-				</div>
-			</div>
-			<div class="panel panels-right">
-				<div class="chat-box guest-q">
-					<div class="person-circle">You</div>
-					<time datetime="2016" class="date">Date</time>
-					<p class="text-box question">Why Front-end ?</p>
-				</div>
-				<div class=" chat-box me-answer clearFix">
-					<div class="person-circle">Me</div>
-					<p class="text-box answer"> A year ago, i made the decision that i don't want to continue my life with telecommunications and started looking into
-						the web technologies, because that was my favorite object in high-school. When i looked deep into the web development
-						i was fascinated with the idea to create website from an image and i decided that this is what i want to do. So here
-						i am now after a year of studying, looking for my first job, and creating my own projects. You can find them at
-						<a href="https://github.com/MartinKostadinov/projectForWebsite">
-							<strong>GitHub</strong></a>.</p>
-				</div>
-			</div>
-			<div class="panel panels-left">
-				<div class="chat-box guest-q">
-					<div class="person-circle">You</div>
-					<time datetime="2016" class="date">Date</time>
-					<p class="text-box question">What it is your current skill level ?</p>
-				</div>
-				<div class=" chat-box me-answer clearFix">
-					<div class="person-circle">Me</div>
-					<div class="text-box answer skills-container">
-
-						<div class="circle-container">
-							<span class="html-css">HTML/CSS</span>
-							<div class="circle-border html">
-								<div class="circle">
-									<span class="circle-value">80%</span>
-								</div>
-							</div>
-						</div>
-						<div class="circle-container">
-							<span class="html-css">JavaScript(jQuery)</span>
-							<div class="circle-border js">
-								<div class="circle">
-									<span class="circle-value">60%</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="panel panels-right">
-				<div class="chat-box guest-q">
-					<div class="person-circle">You</div>
-					<time datetime="2016" class="date">Date</time>
-					<p class="text-box question">Any personal skills you want to share?</p>
-				</div>
-				<div class=" chat-box me-answer clearFix">
-					<div class="person-circle">Me</div>
-					<div class="text-box answer skills-container">
-						<div class="skills-percent">
-							<p>Teamplayer</p>
-							<div class="coding"></div>
-						</div>
-						<div class="skills-percent">
-							<p>Communication</p>
-							<div class="communication"></div>
-						</div>
-						<div class="skills-percent">
-							<p>Creativity</p>
-							<div class="motivation"></div>
-						</div>
-						<div class="skills-percent">
-							<p>Perfecionism</p>
-							<div class="learning"></div>
-						</div>
-						<div class="skills-percent">
-							<p>Communication</p>
-							<div class="organization"></div>
-						</div>
-						<div class="skills-percent">
-							<p>Computing</p>
-							<div class="computing"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</section>
-		<!--3rd Section  projects  gallery -->
-		<section id="projects">
-			<h2>Projects</h2>
-			<ul class="projects-container">
-				<li class="project-description">
-					<div class="project-information">
-						<h3>Personal Website</h3>
-						<p>My biggest project so far is the project for my own website. Since version one which went live - September 2015, the
-							site was completely redesigned, current version is 3.0.</p>
-						<p>The project main features are - it ‘s <strong>responsive</strong> to min - width 320px and max - width 2560px and maintain
-							<strong>Open Graph Protocol</strong>, also I am currently adding <em>ARIA </em>support. Other features are various
-							Parallax techniques and animations for Desktop devices.
-						</p>
-						<span>Technologies used: </span><span> <em>HTML5, CSS3, JavaScript</em> </span>
-						<a href="https://github.com/MartinKostadinov/allProjects/tree/master/personal%20Site" class="btn--source-code " role="button">Source Code</a>
-					</div>
-
-				</li>
-				<li>
-					<div class="project-picture picture-right">
-					</div>
-				</li>
-				<li>
-					<div class="project-picture picture-left"></div>
-				</li>
-				<li class="project-description">
-					<div class="project-information">
-						<h3>Blog SPA</h3>
-						<p>
-							This is my Blog project and it is in early stage of development. For now HTML and CSS part are completed. And it is <strong>responsive</strong>.
-						</p>
-						<p>
-							I am currently adding functionality with AngularJS. I just have finieshed the alpha version.
-						</p>
-						<span>Site Features</span><span>HTML5, CSS3, JavaScript, AngularJS</span>
-						<a href="https://github.com/MartinKostadinov/allProjects/tree/master/blog" class="btn--source-code " role="button">Source Code</a>
-					</div>
+                </li>
+                <li class="projects__item">
+                    <div class="projects__picture projects__picture--right">
+                        <div>
+                </li>
+                <li class="projects__item">
+                    <div class="projects__picture projects__picture--left"></div>
+                </li>
+                <li class="projects__item projects__description">
+                    <div class="projects__information">
+                        <h3 class="projects__title">Blog SPA</h3>
+                        <p class="projects__about-text">
+                          This is my Blog project and it is in early stage of development. For now HTML and CSS part are completed. And it is <strong>responsive</strong>.
+                        </p>
+                        <p class="projects__about-text">
+                           I am currently adding functionality with AngularJS. I just have finieshed the alpha version.
+                        </p>
+                        <span class="projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, JavaScript, AngularJS</span>
+                        <a href="https://github.com/MartinKostadinov/allProjects/tree/master/blog" class="projects__btn " role="button">Source Code</a>
+                      </div>
 
 
-				</li>
-				<li class="project-description">
-					<div class="project-information">
-						<h3>To Do app</h3>
-						<p>At the beginning the app was focused for Desktop devices and had three categories – HTML, CSS, JavaScript. But after
-							a while I decided to expand the app. So now the app it’s <strong>responsive</strong>, users can creaty task categories.
-							For every category there are few options e.g – screen position(for Desktop devices), background- color, title color.
-							After category is created the user can create as many as he wants tasks.
-						</p>
-						<p>
-							Every task can be removed, edited or set to be ready. There is task counter which shows, completed tasks, uncompleted tasks,
-							all tasks.
-						</p>
-						<p>
-							Every element is added via template engine(HandlebarsJs) and have own animation for creation and deletion.
-						</p>
-						<span>Site Features</span><span>HTML5, CSS3, jQuery, HandlebarsJs, Ajax</span>
-						<a href="https://github.com/MartinKostadinov/allProjects/tree/master/to-do" class="btn--source-code " role="button">Source Code</a>
-					</div>
+                </li>
+                <li class="projects__item projects__description">
+                    <div class="projects__information">
+                        <h3 class="projects__title">To Do app</h3>
+                        <p class="projects__about-text">At the beginning the app was focused for Desktop devices and had three categories – HTML, CSS, JavaScript. But after a while
+                          I decided to expand the app. So now the app it’s <strong>responsive</strong>, users can creaty task categories. For every category there are few options e.g –  screen position(for Desktop devices), background- color, title color. After category is created the user can create as many as he wants tasks.
+                        </p>
+                        <p class="projects__about-text">
+                          Every task can be removed, edited or set to be ready. There is task counter which shows, completed tasks, uncompleted tasks, all tasks.
+                        </p>
+                        <p class="projects__about-text">
+                          Every element is added via template engine(HandlebarsJs) and have own animation for creation and deletion.
+                        </p>
+                        <span class="projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, jQuery, HandlebarsJs, Ajax</span>
+                        <a href="https://github.com/MartinKostadinov/allProjects/tree/master/to-do" class="projects__btn " role="button">Source Code</a>
+                      </div>
 
 
-				</li>
-				<li>
-					<div class="project-picture picture-right"></div>
-				</li>
-				<li>
-					<div class="project-picture picture-left"></div>
-				</li>
-				<li class="project-description">
-					<div class="project-information">
-						<h3>Interactive CV</h3>
-						<p>This is simple web form of CV and Cover letter, which I am using for some job applications. It is responsive, and contains
-							a lot of animations.
-						</p>
-						<span>Site Features</span><span>HTML5, CSS3, JavaScript</span>
-						<a href="https://github.com/MartinKostadinov/allProjects/tree/master/cv" class="btn--source-code " role="button">Source Code</a>
-					</div>
+                </li>
+                <li class="projects__item">
+                    <div  class="projects__picture projects__picture--right"></div>
+                </li>
+                <li class="projects__item">
+                    <div  class="projects__picture projects__picture--left"></div>
+                </li>
+                <li class="projects__item projects__description">
+                    <div class="projects__information">
+                        <h3 class="projects__title">Interactive CV</h3>
+                        <p class="projects__about-text">This is simple web form of CV and Cover letter, which I am using for some job applications.
+                            It is responsive, and contains a lot of animations.
+                        </p>
+                        <span class"projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, JavaScript</span>
+                        <a href="https://github.com/MartinKostadinov/allProjects/tree/master/cv" class="projects__btn " role="button">Source Code</a>
+                      </div>
 
-				</li>
-				<li class="project-description">
-					<div class="project-information">
-						<h3>Web Gallery</h3>
-						<p>I just started this project, and for the only functionality which have is image Slider. If you want to see the future
-							plans for this project check the source code repository.
-						</p>
-						<span>Site Features</span><span>HTML5, CSS3, jQuery</span>
-						<a href="https://github.com/MartinKostadinov/allProjects/tree/master/personal%20Site" class="btn--source-code " role="button">Source Code</a>
-					</div>
+                </li>
+                <li class="projects__item projects__description">
+                    <div class="projects__information">
+                        <h3 class="projects__title">Web Gallery</h3>
+                        <p class="projects__about-text">I just started this project, and for the only functionality which have is image Slider. If you want to see the future plans for this project check the source code repository.
+                        </p>
+                        <span class="projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, jQuery</span>
+                        <a href="https://github.com/MartinKostadinov/allProjects/tree/master/personal%20Site" class="projects__btn " role="button">Source Code</a>
+                      </div>
 
-				</li>
-				<li>
-					<div class="project-picture picture-right"></div>
-				</li>
-			</ul>
-		</section>
-	</main>
-	<div id="push">
-	</div>
-	<!--FOOTER -->
-	<footer>
-		<a href="mailto:martinkostadinov681@gmail.com">martinkostadinov681@gmail.com</a>
-	</footer>
-	<script src="scripts/main.min.js"></script>
+                </li>
+                <li class="projects__item">
+                    <div  class="projects__picture projects__picture--right"></div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <div id="contact">
+    </div>
+    <!--FOOTER -->
+    <footer>
+        <a class="mail-link" href="mailto:martinkostadinov681@gmail.com">martinkostadinov681@gmail.com</a>
+    </footer>
+    <script src="../dist/scripts/pagescripts/main.min.js"></script>
 </body>
 
 </html>
