@@ -1,0 +1,294 @@
+@import "colors";
+@mixin skills($percent1, $percent2) {
+    background: linear-gradient(to right, #c80a36 $percent1, #424242 $percent2);
+}
+/*Contains styles for the skills sections with the chat box, styles :
+#skills
+panels
+panels--left, --animate-js
+panels--right, --animate-js
+chat-box--me
+chat-box__text
+chat-box__avatar
+chat-box__avatar--me
+chat-box__text--answer
+chat-box__avatar--guest
+chat-box__text--question
+skills
+skills__coding
+skills__personal
+skills__coding__value
+skills__coding
+skills__coding__border
+skills__coding__circle
+*/
+#skills {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-bottom: 3em;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.skills__title {
+    background-color: #111;
+    color: $main-color;
+}
+//panels styles
+
+.panels {
+    width: 50%;
+    background: #ddd;
+}
+
+.panels--left {
+    margin-left: -60%;
+
+    &--animate-js {
+        animation-name: showChatLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    @keyframes showChatLeft {
+        0% {
+            margin-left: -60%;
+        }
+
+        100% {
+            margin-left: 25%;
+        }
+    }
+}
+
+.panels--right {
+    margin-left: 160%;
+
+    &--animate-js {
+        animation-name: showChatRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    @keyframes showChatRight {
+        0% {
+            margin-left: 160%;
+        }
+
+        100% {
+            margin-left: 25%;
+        }
+    }
+}
+//General chatbox styles
+
+.chat-box {
+    flex: 1;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    padding: 0.9em;
+}
+
+.chat-box__avatar {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50%;
+    line-height: 3.5;
+    font-weight: bolder;
+
+    &:after {
+        content: "";
+        position: absolute;
+        margin-top: 61px;
+        border-width: 9px;
+        border-style: solid;
+        border-color: transparent transparent $question transparent;
+    }
+}
+
+.chat-box__text {
+    width: 90%;
+    margin-top: 0.875rem;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+//Visitor chatbox
+.chat-box__avatar--guest {
+    border: 3px solid $main-color;
+    color: $main-color;
+
+    &:after {
+        left: 35%;
+    }
+}
+// question styles
+.chat-box__text--question {
+    padding-left: 1.25em;
+    background-color: #c80a36;
+    color: $white-color;
+    transform-origin: top left;
+    opacity: 0;
+
+    &--animate-js {
+        animation-name: question;
+        animation-duration: 800ms;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+}
+@keyframes question {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+//me answer styles
+.chat-box--me {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.chat-box__avatar--me {
+    border: 3px solid #eee;
+
+    &:after {
+        right: 35%;
+        border-color: transparent transparent $me-answer transparent;
+    }
+}
+
+.chat-box__text--answer {
+    background-color: $me-answer;
+    transform-origin: top right;
+    opacity: 0;
+
+    &--animate-js {
+        animation-name: answer;
+        animation-duration: 800ms;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 1.6s;
+    }
+}
+@keyframes answer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+//Date
+.date {
+    position: absolute;
+    top: 5%;
+    transform: translateX(-50%);
+
+}
+
+.github-link {
+    color: $black1;
+}
+//skills tyles
+
+.skills {
+    display: inline-block;
+    text-align: center;
+}
+
+.skills__coding {
+    width: 110px;
+    height: 130px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.skills__coding__border {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    background-color: $gallery-color;
+    border-radius: 100%;
+
+    &--html {
+        background-image: linear-gradient(91deg, transparent 50%, $main-color 50%), linear-gradient(15deg, $main-color 50%, transparent 50%);
+    }
+
+    &--js {
+        background-image: linear-gradient(91deg, transparent 50%, $main-color 50%), linear-gradient(-50deg, $main-color 50%, transparent 50%);
+    }
+}
+
+.skills__coding__circle {
+    width: 100px;
+    height: 100px;
+    background-color: $white-color;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    border-radius: 100%;
+}
+
+.skills__coding__value {
+    font-size: 2.5rem;
+    line-height: 2.5;
+    color: #666666;
+}
+
+.skills__personal {
+    width: 40%;
+    display: inline-block;
+    padding: 10px 0;
+
+    > div {
+        width: 90%;
+        height: 8px;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+.teamplayer {
+    @include skills(90%, 10%);
+}
+
+.communication {
+    @include skills(70%, 30%);
+}
+
+.motivation {
+    @include skills(50%, 50%);
+}
+
+.learning {
+    @extend .communication;
+}
+
+.organization {
+    @include skills(80%, 20%);
+}
+
+.computing {
+    @include skills(80%, 20%);
+}

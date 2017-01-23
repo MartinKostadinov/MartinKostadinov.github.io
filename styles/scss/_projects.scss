@@ -1,0 +1,155 @@
+@import "colors";
+/*this section contains stylse for projects section, the stylse are:
+*/
+#projects {
+    height: auto;
+    margin-bottom: 15.125em;
+    background-color: $black-dark;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.projects__title--h2 {
+    background-color: $main-color;
+    color: #111;
+}
+// Styles for the information box for every project
+
+.projects__container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+//General styles for list items in project Section
+
+.projects__item {
+    height: calc(6em + 100vh);
+    flex: 1 1 60%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.projects__description {
+    flex: 0 1 40%;
+}
+
+.projects__information {
+    width: 90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white-color;
+}
+
+.projects__title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+    border-bottom: 5px solid $white-color;
+}
+
+.projects__about-text {
+    width: 100%;
+    text-align: justify;
+    word-break: break-word;
+
+}
+
+.projects__features {
+    width: 12.5em;
+    display: inline-block;
+    margin: 1em;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+.projects__features-techs {
+    display: block;
+}
+
+.projects__btn {
+    width: 7.5em;
+    display: block;
+    padding: 0.9em;
+    margin: 1.25em auto 0;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 3px solid $white-color;
+    transition: ease-out 0.4s;
+    &:hover{
+      transform: scale(1.07);
+    }
+}
+//Pojects pictures
+
+.projects__picture {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: ease-in-out 400ms;
+}
+
+.projects__picture--right {
+    background-position: 102% 70%;
+    background-size: 61% 61%;
+}
+
+.projects__picture--left {
+    background-position: 0 70%;
+    background-size: 61% 61%;
+}
+
+.projects__item:nth-child(1) {
+    background-color: $main-color;
+}
+
+.projects__item:nth-child(4) {
+    background-color: #1976d2;
+}
+
+.projects__item:nth-child(5) {
+    background-color: #43346d;
+}
+
+.projects__item:nth-child(8) {
+    background-color: #2df060;
+}
+
+.projects__item:nth-child(9) {
+    background-color: #2196f3;
+}
+
+.projects__item:nth-child(2) {
+    .projects__picture {
+        background-image: url('../../images/website.jpg');
+    }
+}
+
+.projects__item:nth-child(3) {
+    .projects__picture {
+        background-image: url('../../images/blog1.jpg');
+    }
+}
+
+.projects__item:nth-child(6) {
+    .projects__picture {
+        background-image: url('../../images/todo.jpg');
+    }
+}
+
+.projects__item:nth-child(7) {
+    .projects__picture {
+        background-image: url('../../images/test.jpg');
+    }
+}
+
+.projects__item:nth-child(10) {
+    .projects__picture {
+        background-image: url('../../images/createquestion.jpg');
+    }
+}
