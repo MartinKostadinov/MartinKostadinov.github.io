@@ -9,7 +9,7 @@
     z-index: 4;
 }
 
-.projects__title--h2 {
+.projects__headline {
     background-color: $main-color;
     color: #111;
 }
@@ -55,7 +55,6 @@
     width: 100%;
     text-align: justify;
     word-break: break-word;
-
 }
 
 .projects__features {
@@ -79,8 +78,9 @@
     font-size: 1rem;
     border: 3px solid $white-color;
     transition: ease-out 0.4s;
-    &:hover{
-      transform: scale(1.07);
+
+    &:hover {
+        transform: scale(1.07);
     }
 }
 //Pojects pictures
@@ -109,7 +109,7 @@
 }
 
 .projects__item:nth-child(4) {
-    background-color: #1976d2;
+    background-color: #fb9931;
 }
 
 .projects__item:nth-child(5) {

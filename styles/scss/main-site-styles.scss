@@ -58,25 +58,26 @@ footer {
     text-align: center;
     position: fixed;
     bottom: 0;
-    &:hover::before {
-      content: '';
-      position: absolute;
-      background-color: #b9091e;
-      left: 0;
-      height: 250px;
-      animation: animateFoot;
-      animation-duration: 0.8s;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-in-out;
 
+    &:hover::before {
+        content: '';
+        position: absolute;
+        background-color: #b9091e;
+        left: 0;
+        height: 250px;
+        animation: animateFoot;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
     @keyframes animateFoot {
-      0% {
-        width: 0;
-      }
-      100%{
-        width: 100%;
-      }
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
     }
 }
 

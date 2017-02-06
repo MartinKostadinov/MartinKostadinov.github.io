@@ -117,8 +117,8 @@ skills__coding__circle
     font-size: 1rem;
     text-align: left;
     line-height: 1.5;
+    text-align: justify;
 }
-
 //Visitor chatbox
 .chat-box__avatar--guest {
     border: 3px solid $main-color;
@@ -129,6 +129,7 @@ skills__coding__circle
     }
 }
 // question styles
+
 .chat-box__text--question {
     padding-left: 1.25em;
     background-color: #c80a36;
@@ -156,6 +157,7 @@ skills__coding__circle
     }
 }
 //me answer styles
+
 .chat-box--me {
     height: 100%;
     display: flex;
@@ -197,11 +199,11 @@ skills__coding__circle
     }
 }
 //Date
+
 .date {
     position: absolute;
     top: 5%;
     transform: translateX(-50%);
-
 }
 
 .github-link {

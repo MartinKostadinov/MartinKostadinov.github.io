@@ -24,6 +24,7 @@ scroll-down__icon*/
     z-index: 6;
 }
 //introduction styles
+
 .introduction {
     height: 13.43em;
     position: relative;
@@ -40,6 +41,7 @@ scroll-down__icon*/
     }
 }
 //Red btn contact styles
+
 .btn-contact {
     width: 15.65em;
     height: 3.125em;
@@ -64,11 +66,11 @@ scroll-down__icon*/
     }
 }
 //scroll down notification styles
+
 .scroll-down {
     height: 6.25em;
     width: 6.25em;
-    margin: 0 auto;
-    margin-top: 25vh;
+    margin: 25vh auto 0;
 
     span {
         display: inline-block;
