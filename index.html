@@ -16,20 +16,23 @@
 <body>
     <!--HEADER -->
     <header class="clearFix" id="header">
-        <div class="header__menu-btn" title="Menu" role="button" tabindex="1">
-            <div class="header__menu-btn__icon"></div>
+        <div class="btn-menu" title="Menu" role="button" tabindex="1">
+            <div class="btn-menu__icon"></div>
         </div>
         <h1 class="logo"><a href="#welcome" tabindex="2">MARTIN</a></h1>
-        <nav class="header__nav">
+        <nav class="nav">
+            <header class="nav__title">
+                <h2>Navigation menu</h2>
+            </header>
             <ul role="menubar" aria-hidden="true">
-                <li class="header__nav__item" role="menuitem"><a class="header__nav__anchor" href="#welcome">Hello</a>
+                <li class="nav__item" role="menuitem"><a class="nav__anchor" href="#welcome">Hello</a>
                 </li>
-                <li class="header__nav__item" role="menuitem"><a class="header__nav__anchor" href="#skills">Skills</a>
+                <li class="nav__item" role="menuitem"><a class="nav__anchor" href="#skills">Skills</a>
                 </li>
-                <li class="header__nav__item" role="menuitem"><a class="header__nav__anchor" href="#projects">Projects</a>
+                <li class="nav__item" role="menuitem"><a class="nav__anchor" href="#projects">Projects</a>
                 </li>
-                <li class="header__nav__item" role="menuitem"><a class="header__nav__anchor" href="#contact">Contact</a></li>
-                <!--#contact is  empty div  to show-->
+                <li class="nav__item" role="menuitem"><a class="nav__anchor" href="#contact">Contact</a></li>
+                <!--#contact is  empty div  to show the footer on click-->
             </ul>
         </nav>
     </header>
@@ -38,7 +41,6 @@
         <!--First section -Introduction -->
         <section id="welcome">
             <div class="introduction ">
-
                 <p class="introduction__first-part">
                     My name is Martin
                 </p>
@@ -74,11 +76,8 @@
                 </div>
                 <div class=" chat-box chat-box--me clearFix">
                     <div class="chat-box__avatar chat-box__avatar--me">Me</div>
-                    <p class="chat-box__text chat-box__text--answer"> Six months ago, I have made the decision that I don't want to continue my life with telecommunications and started
-                        looking into the web technologies, because that was my favorite object in high-school. When I looked
-                        deep into the web development I was fascinated with the idea to create website from an image and
-                        decided that this is what I want to do. So here I am now, looking for
-                        my first job, and creating my own projects. You can find them at
+                    <p class="chat-box__text chat-box__text--answer"> Six months ago, I have made the decision that I don't want to continue my life with telecommunications and started looking into the web technologies, because that was my favorite object in high-school. When I looked deep into the web
+                        development I was fascinated with the idea to create website from an image and decided that this is what I want to do. So here I am now, looking for my first job, and creating my own projects. You can find them at
                         <a class="github-link" href="https://github.com/MartinKostadinov">
                             <strong>GitHub</strong></a>.</p>
                 </div>
@@ -152,20 +151,18 @@
         </section>
         <!--3rd Section  projects  gallery -->
         <section id="projects">
-            <h2 class="projects__title--h2">Here are some of my Projects</h2>
+            <h2 class="projects__headline">Here are some of my Projects</h2>
             <ul class="projects__container">
                 <li class="projects__item projects__description">
                     <div class="projects__information">
                         <h3 class="projects__title">Personal Website</h3>
-                        <p class="projects__about-text">My biggest project so far is the project for my own website. Since version one which went live -
-                            September 2016, the site was completely redesigned, current version is 3.0.
+                        <p class="projects__about-text">My biggest project so far is the project for my own website. Since version one which went live - September 2016, the site was completely redesigned, current version is 3.0.
                         </p>
-                        <p class="projects__about-text">The project main features are - it ‘s <strong>responsive</strong> to min - width 320px and max -
-                            width 2560px and maintain <strong>Open Graph Protocol</strong>, also I am currently adding <em>ARIA </em>support.
-                            Other features are various Parallax techniques and animations for Desktop devices.
+                        <p class="projects__about-text">The project main features are - it ‘s <strong>responsive</strong> to min - width 320px and max - width 2560px and maintain <strong>Open Graph Protocol</strong>, also I am currently adding <em>ARIA </em>support. Other features are
+                            various Parallax techniques and animations for Desktop devices.
                         </p>
                         <span class="projects__features">Technologies used: </span><span class="projects__features-techs"> <em>HTML5, CSS3, JavaScript</em> </span>
-                        <a href="https://github.com/MartinKostadinov/allProjects/tree/master/personal%20Site" class="projects__btn " role="button">Source Code</a>
+                        <a href="https://github.com/MartinKostadinov/MartinKostadinov.github.io" class="projects__btn " role="button">Source Code</a>
                     </div>
 
                 </li>
@@ -183,32 +180,25 @@
                             This is my Blog project and it is in early stage of development. For now HTML and CSS part are completed. And it is <strong>responsive</strong>.
                         </p>
                         <p class="projects__about-text">
-                            I am currently adding functionality with AngularJS. I just have finieshed the alpha version.
+                            I am currently adding functionality with AngularJS. Soon first alpha will be live and will be hosted on Firebase.
                         </p>
-                        <span class="projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, JavaScript, AngularJS</span>
-                        <a href="https://github.com/MartinKostadinov/allProjects/tree/master/blog" class="projects__btn " role="button">Source Code</a>
+                        <span class="projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, AngularJS</span>
+                        <a href="https://github.com/MartinKostadinov/blog" class="projects__btn " role="button">Source Code</a>
                     </div>
-
-
                 </li>
                 <li class="projects__item projects__description">
                     <div class="projects__information">
                         <h3 class="projects__title">To Do app</h3>
-                        <p class="projects__about-text">At the beginning the app was focused for Desktop devices and had three categories – HTML, CSS, JavaScript.
-                            But after a while I decided to expand the app. So now the app it’s <strong>responsive</strong>,
-                            users can creaty task categories. For every category there are few options e.g – screen position(for
-                            Desktop devices), background- color, title color. After category is created the user can create
-                            as many as he wants tasks.
+                        <p class="projects__about-text">At the beginning the app was focused for Desktop devices and had three categories – HTML, CSS, JavaScript. But after a while I decided to expand the app. So now the app it’s <strong>responsive</strong>, users can creaty task categories.
+                            For every category there are few options e.g – screen position(for Desktop devices), background- color, title color. After category is created the user can create as many as he wants tasks.
                         </p>
                         <p class="projects__about-text">
                             Every element is added via template engine(HandlebarsJs) and have own animation for creation and deletion.
                         </p>
                         <span class="projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, jQuery, HandlebarsJs, Ajax</span>
-                        <a href="https://github.com/MartinKostadinov/allProjects/tree/master/to-do" class="projects__btn " role="button">Source Code</a>
+                        <a href="https://github.com/MartinKostadinov/to-do" class="projects__btn " role="button">Source Code</a>
                         <a href="https://martinkostadinov.github.io/to-do" class="projects__btn">Live version</a>
                     </div>
-
-
                 </li>
                 <li class="projects__item">
                     <div class="projects__picture projects__picture--right"></div>
@@ -219,7 +209,7 @@
                 <li class="projects__item projects__description">
                     <div class="projects__information">
                         <h3 class="projects__title">Front-end Test app</h3>
-                        <p class="projects__about-text"> This project is  for Front-end developers, to test their knowledge on various categories(currently available HTML and CSS). Since its hosted on Github it doesn't keep the results.
+                        <p class="projects__about-text"> This project is for Front-end developers, to test their knowledge on various categories(currently available HTML and CSS). Since its hosted on Github it doesn't keep the results.
                         </p>
                         <span class="projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, JavaScript, JSON</span>
                         <a href="https://github.com/MartinKostadinov/FEtest" class="projects__btn " role="button">Source Code</a>
