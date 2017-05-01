@@ -5,49 +5,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name "description" content="A personal portfolio webpage from the Front End developer Martin Kostadinov">
+    <meta name "description" content="A personal portfolio webpage for the Front End developer Martin Kostadinov">
     <meta name "author" content="Martin Kostadinov">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <meta name="theme-color" content="#2d2b2b">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
     <!--Montserrat font  is licensed under Open Font License  you can see the full license at http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web-->
-    <link rel="stylesheet" href="./styles/css/main.min.css">
+    <link rel="stylesheet" href="styles/css/main.min.css">
+    <!-- Open Graph Protocol information -->
+    <meta property="og:title" content="Martin Kostadinov personal webpage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://martinkostadinov.github.io/" />
+    <meta property="og:image" content="https://martinkostadinov.github.io/images/key-1.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1861" />
+    <meta property="og:image:height" content="950" />
+    <meta property="og:description" content="A personal portfolio webpage from the Front End developer Martin Kostadinov" />
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Title color for Win8 -->
+    <meta name="msapplication-TileColor" content="#2d2b2b">
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Personal Web Page">
+    <link rel="icon" size="192x192" href="images/touch/chrome-touch-icon-192-192.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2d2b2b">
+    <meta name="apple-mobile-web-app-title" content="Personal Web Page">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <!-- Fonts -->
     <title>Martin's personal Web page</title>
 </head>
 
 <body>
     <!--HEADER -->
-    <header class="clearFix" id="header">
-        <div class="btn-menu" title="Menu" role="button" tabindex="1">
+    <header id="header">
+        <h1 class="logo"><a href="#welcome">MARTIN</a></h1>
+        <button class="btn-menu" title="Menu" aria-label="menu">
             <div class="btn-menu__icon"></div>
-        </div>
-        <h1 class="logo"><a href="#welcome" tabindex="2">MARTIN</a></h1>
-        <nav class="nav">
-            <header class="nav__title">
+        </button>
+        <nav class="nav js-hidden" role="navigation">
+            <header class="js-hidden">
                 <h2>Navigation menu</h2>
             </header>
-            <ul role="menubar" aria-hidden="true">
+            <ul class="nav__list" role="menu" aria-hidden="true">
                 <li class="nav__item" role="menuitem"><a class="nav__anchor" href="#welcome">Hello</a>
                 </li>
                 <li class="nav__item" role="menuitem"><a class="nav__anchor" href="#skills">Skills</a>
                 </li>
                 <li class="nav__item" role="menuitem"><a class="nav__anchor" href="#projects">Projects</a>
                 </li>
-                <li class="nav__item" role="menuitem"><a class="nav__anchor" href="#contact">Contact</a></li>
+                <li class="nav__item" role="menuitem"><a class="nav__anchor" href="#contacts">Contact</a></li>
                 <!--#contact is  empty div  to show the footer on click-->
             </ul>
         </nav>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
     </header>
     <!--HEADER -->
-    <main>
+    <main id="main-content">
         <!--First section -Introduction -->
         <section id="welcome">
             <div class="introduction ">
-                <p class="introduction__first-part">
-                    My name is Martin
+                <p class="introduction__text">
+                     Martin Kostadinov
                 </p>
-                <p class="introduction__second-part">
-                    and i like to create websites...
+                <p class="introduction__text">
+                    WEB Developer
                 </p>
-                <a href="#contact" class="btn-contact" tabindex="3" role="button">Contact</a>
+                <a href="#contacts" class="btn-contact" role="button">CONTACT</a>
                 <div class="scroll-down">
                     <span class="scroll-down__text">Scroll down</span>
                     <span class="scroll-down__icon">&#8643;</span>
@@ -56,191 +83,126 @@
         </section>
         <!--Second section skills and who am i -->
         <section id="skills">
-            <h2 class="skills__title">Let's have chat About me</h2>
-            <div class="panels panels--left">
-                <div class="chat-box chat-box--guest">
-                    <div class=" chat-box__avatar chat-box__avatar--guest">You</div>
-                    <time class="date">Date</time>
-                    <p class="chat-box__text chat-box__text--question">Who are you ?</p>
-                </div>
-                <div class=" chat-box chat-box--me clearFix">
-                    <div class="chat-box__avatar chat-box__avatar--me">Me</div>
-                    <p class="chat-box__text chat-box__text--answer">My name is Martin, 24 years old Junior Front-end developer.I have Bachelor's degree in telecommunications.</p>
-                </div>
-            </div>
-            <div class="panels panels--right">
-                <div class="chat-box chat-box--guest">
-                    <div class="chat-box__avatar chat-box__avatar--guest">You</div>
-                    <time class="date">Date</time>
-                    <p class="chat-box__text chat-box__text--question">Why Front-end ?</p>
-                </div>
-                <div class=" chat-box chat-box--me clearFix">
-                    <div class="chat-box__avatar chat-box__avatar--me">Me</div>
-                    <p class="chat-box__text chat-box__text--answer"> Six months ago, I have made the decision that I don't want to continue my life with telecommunications and started looking into the web technologies, because that was my favorite object in high-school. When I looked deep into the web
-                        development I was fascinated with the idea to create website from an image and decided that this is what I want to do. So here I am now, looking for my first job, and creating my own projects. You can find them at
-                        <a class="github-link" href="https://github.com/MartinKostadinov">
-                            <strong>GitHub</strong></a>.</p>
-                </div>
-            </div>
-            <div class="panels panels--left">
-                <div class="chat-box chat-box--guest">
-                    <div class="chat-box__avatar chat-box__avatar--guest">You</div>
-                    <time class="date">Date</time>
-                    <p class="chat-box__text chat-box__text--question">What it is your current skill level ?</p>
-                </div>
-                <div class=" chat-box chat-box--me clearFix">
-                    <div class="chat-box__avatar chat-box__avatar--me">Me</div>
-                    <div class="chat-box__text chat-box__text--answer skills">
-
-                        <div class="skills__coding">
-                            <span class="">HTML/CSS</span>
-                            <div class="skills__coding__border skills__coding__border--html">
-                                <div class="skills__coding__circle">
-                                    <span class="skills__coding__value">80%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills__coding">
-                            <span class="">JavaScript(jQuery)</span>
-                            <div class="skills__coding__border skills__coding__border--js">
-                                <div class="skills__coding__circle">
-                                    <span class="skills__coding__value">60%</span>
-                                </div>
-                            </div>
-                        </div>
+            <img class="skills--bg" src="images/svg.png" alt="Background image with the  text 'Front-end'">
+            <!--<p >Front-end</p>-->
+            <div class="info clearFix">
+                <h2 class="skills__title">Let's have chat About me</h2>
+                <article class="info__article">
+                    <h3 class="info__question">Who are you ?</h3>
+                    <p class="answer info__element--right">My name is Martin, 25 years old Web developer. A year ago, I have started looking into the web technologies,
+                        because that was my favorite object in school. When I looked deep into the web development I
+                        was fascinated with the idea to create website from an image and decided that this is what I want
+                        to do. So here I am now, looking for my first job, and creating my own projects. You can find them
+                        at <a class="github-link" href="https://github.com/MartinKostadinov">GitHub</a>.
+                    </p>
+                </article>
+                <article class="info__article ">
+                    <h3 class="info__question ">What can you tell about your projects ?</h3>
+                    <p class="answer info__element--right "> For every project, i am trying to follow the best practices for the language or technology that
+                        will be used. Also every project is developed to be  mobile friendly and responsive. Recently i have started making them to meet the requirements for progressive web app.
+                        Because i think this will be the next big thing in the web development world. For  more information about the projects  check the next section.
+                    </p>
+                </article>
+                <article class="info__article">
+                    <h3 class="info__question">What Technologies do you know ?</h3>
+                    <div class="answer info__element--right">
+                        <p><span class="info__exp">Languages:</span> <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>;</p>
+                        <p><span class="info__exp">Web Technologies:</span> Sass, Bootstrap, jQuery, AngularJS, Handlebarsjs,
+                            React, Redux;</p>
+                        <p><span class="info__exp">Experience with:</span> OOP, UX, Responsive Web Design, Progressive  Web Applications, Gulp, Git, AngularFire,
+                            Webpack 2, Gulp;</p>
+                        <p><span class="info__exp">Tools:</span> Visual Studio Code, Atom, Adobe Photoshop;</p>
                     </div>
-                </div>
-            </div>
-            <div class="panels panels--right">
-                <div class="chat-box chat-box--guest">
-                    <div class="chat-box__avatar chat-box__avatar--guest">You</div>
-                    <time class="date">Date</time>
-                    <p class="chat-box__text chat-box__text--question">Any personal skills you want to share?</p>
-                </div>
-                <div class=" chat-box chat-box--me clearFix">
-                    <div class=" chat-box__avatar chat-box__avatar--me">Me</div>
-                    <div class="chat-box__text chat-box__text--answer skills">
-                        <div class="skills__personal">
-                            <p>Teamplayer</p>
-                            <div class="teamplayer"></div>
-                        </div>
-                        <div class="skills__personal">
-                            <p>Communication</p>
-                            <div class="communication"></div>
-                        </div>
-                        <div class="skills__personal">
-                            <p>Creativity</p>
-                            <div class="motivation"></div>
-                        </div>
-                        <div class="skills__personal">
-                            <p>Perfecionism</p>
-                            <div class="learning"></div>
-                        </div>
-                        <div class="skills__personal">
-                            <p>Communication</p>
-                            <div class="organization"></div>
-                        </div>
-                        <div class="skills__personal">
-                            <p>Computing</p>
-                            <div class="computing"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+                </article>
+            </div>
         </section>
         <!--3rd Section  projects  gallery -->
         <section id="projects">
             <h2 class="projects__headline">Here are some of my Projects</h2>
-            <ul class="projects__container">
-                <li class="projects__item projects__description">
-                    <div class="projects__information">
-                        <h3 class="projects__title">Personal Website</h3>
-                        <p class="projects__about-text">My biggest project so far is the project for my own website. Since version one which went live - September 2016, the site was completely redesigned, current version is 3.0.
-                        </p>
-                        <p class="projects__about-text">The project main features are - it ‘s <strong>responsive</strong> to min - width 320px and max - width 2560px and maintain <strong>Open Graph Protocol</strong>, also I am currently adding <em>ARIA </em>support. Other features are
-                            various Parallax techniques and animations for Desktop devices.
-                        </p>
-                        <span class="projects__features">Technologies used: </span><span class="projects__features-techs"> <em>HTML5, CSS3, JavaScript</em> </span>
-                        <a href="https://github.com/MartinKostadinov/MartinKostadinov.github.io" class="projects__btn " role="button">Source Code</a>
-                    </div>
-
-                </li>
-                <li class="projects__item">
-                    <div class="projects__picture projects__picture--right">
-                        <div>
-                </li>
-                <li class="projects__item">
-                    <div class="projects__picture projects__picture--left"></div>
-                </li>
-                <li class="projects__item projects__description">
-                    <div class="projects__information">
+            <article class="project">
+                <div class="project__container">
+                    <div class="project__description">
                         <h3 class="projects__title">Blog SPA</h3>
-                        <p class="projects__about-text">
-                            This is my Blog project and it is in early stage of development. For now HTML and CSS part are completed. And it is <strong>responsive</strong>.
-                        </p>
-                        <p class="projects__about-text">
-                            I am currently adding functionality with AngularJS. Soon first alpha will be live and will be hosted on Firebase.
-                        </p>
-                        <span class="projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, AngularJS</span>
-                        <a href="https://github.com/MartinKostadinov/blog" class="projects__btn " role="button">Source Code</a>
+                        <div class="project__information clearFix">
+                            <p class="projects__about-text">
+                                This is my Blog project, it is created with AngularJS and Google Firebase. It was developed to be responsive and it is still in BETA version.
+                            </p>
+                            
+                            <h4 class="projects__features">Technologies: </h4>
+                            <span class="projects__features-techs">HTML5, CSS3, AngularJS, Firebase</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/MartinKostadinov/blog" class="projects__btn" role="button">Source Code</a>
+                            <a href="https://github.com/MartinKostadinov/blog" class="projects__btn" role="button">Beta version</a>
+                        </div>
                     </div>
-                </li>
-                <li class="projects__item projects__description">
-                    <div class="projects__information">
+                    <img src="./images/blog1.jpg" alt="Picture of the blog project" class="project__image">
+                </div>
+            </article>
+            <article class="project">
+                <div class="project__container">
+                    <div class="project__description">
                         <h3 class="projects__title">To Do app</h3>
-                        <p class="projects__about-text">At the beginning the app was focused for Desktop devices and had three categories – HTML, CSS, JavaScript. But after a while I decided to expand the app. So now the app it’s <strong>responsive</strong>, users can creaty task categories.
-                            For every category there are few options e.g – screen position(for Desktop devices), background- color, title color. After category is created the user can create as many as he wants tasks.
-                        </p>
-                        <p class="projects__about-text">
-                            Every element is added via template engine(HandlebarsJs) and have own animation for creation and deletion.
-                        </p>
-                        <span class="projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, jQuery, HandlebarsJs, Ajax</span>
-                        <a href="https://github.com/MartinKostadinov/to-do" class="projects__btn " role="button">Source Code</a>
-                        <a href="https://martinkostadinov.github.io/to-do" class="projects__btn">Live version</a>
+                        <div class="project__information">
+                            <p class="projects__about-text"> The app is responsive and provides users with few customization options. Custom animations are created for every element.
+                            </p>
+                            <h4 class="projects__features">Technologies: </h4><span class="projects__features-techs">HTML5, jQuery, HandlebarsJs, Bootstrap</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/MartinKostadinov/to-do" class="projects__btn" role="button">Source Code</a>
+                            <a href="https://martinkostadinov.github.io/to-do" class="projects__btn" role="button">Demo version</a>
+                        </div>
                     </div>
-                </li>
-                <li class="projects__item">
-                    <div class="projects__picture projects__picture--right"></div>
-                </li>
-                <li class="projects__item">
-                    <div class="projects__picture projects__picture--left"></div>
-                </li>
-                <li class="projects__item projects__description">
-                    <div class="projects__information">
-                        <h3 class="projects__title">Front-end Test app</h3>
-                        <p class="projects__about-text"> This project is for Front-end developers, to test their knowledge on various categories(currently available HTML and CSS). Since its hosted on Github it doesn't keep the results.
-                        </p>
-                        <span class="projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, JavaScript, JSON</span>
-                        <a href="https://github.com/MartinKostadinov/FEtest" class="projects__btn " role="button">Source Code</a>
-                        <a href="https://martinkostadinov.github.io/FEtest/" class="projects__btn">Live version</a>
-                    </div>
+                    <img src="./images/todo.jpg" alt="Picture of the to-do project" class="project__image">
+                </div>
+            </article>
+            <article class="project">
+                <div class="project__container">
+                    <div class="project__description">
+                        <h3 class="projects__title">Test app</h3>
+                        <div class="project__information">
+                            <p class="projects__about-text"> This is test application for Front-end developers, to test their knowledge on various of categories. The project is responsive and it is developed with React and Redux.
+                            </p>
+                            <h4 class="projects__features">Technologies: </h4><span class="projects__features-techs">React, Redux, CSS3,Webpack</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/MartinKostadinov/FeTest-with-React-and-Redux" class="projects__btn " role="button">Source Code</a>
+                            <a href="https://martinkostadinov.github.io/Fe-test-app-with-React-and-Redux-DEMO/" class="projects__btn">Live version</a>
+                        </div>
 
-                </li>
-                <li class="projects__item projects__description">
-                    <div class="projects__information">
-                        <h3 class="projects__title">Create questions  for FE test application</h3>
-                        <p class="projects__about-text">I just started this project, its purpose is creating questions for the FE test app.
-                        </p>
-                        <span class="projects__features">Site Features</span><span class="projects__features-techs">HTML5, CSS3, JavaScript(es6), Bootstrap</span>
-                        <a href="https://github.com/MartinKostadinov/CreateQuestions" class="projects__btn " role="button">Source Code</a>
-                        <a href="https://martinkostadinov.github.io/CreateQuestions/" class="projects__btn">Live version</a>
                     </div>
+                    <img src="./images/test.jpg" alt="Picture of the Front-end test project" class="project__image">
 
-                </li>
-                <li class="projects__item">
-                    <div class="projects__picture projects__picture--right"></div>
-                </li>
-            </ul>
+                </div>
+            </article>
         </section>
     </main>
-    <div id="contact">
-    </div>
     <!--FOOTER -->
-    <footer>
-        <a class="mail-link" href="mailto:martinkostadinov681@gmail.com">martinkostadinov681@gmail.com</a>
+    <footer id="contacts">
+        <h2>Contacts</h2>
+        <ul class="contact">
+            <li class="contact__items"><a href="https://github.com/MartinKostadinov" class="contact__links">GitHub</a></li>
+            <li class="contact__items"><a href="https://www.linkedin.com/in/martin-kostadinov-4300b1138/" class="contact__links">Linkedin</a></li>
+            <li class="contact__items"><a href="mailto:martinkostadinov681@gmail.com" class="contact__links">Mail</a></li>
+        </ul>
     </footer>
-    <script src="./scripts/main.min.js"></script>
+    <script>
+        (function () {
+            /*Check if Service-worker is supported*/
+            if (!('serviceWorker' in navigator)) {
+                console.log('Service Worker not supported');
+                return;
+            }
+            navigator.serviceWorker.register('service-worker.js')
+                .then(function (registration) {
+                    console.log('Service worker successfully registered');
+                }).catch(function (error) {
+                    console.log('registration failed:', error);
+                });
+        }());
+    </script>
+    <script src="scripts/index.min.js"></script>
 </body>
 
 </html>
